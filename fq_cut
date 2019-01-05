@@ -1,0 +1,4 @@
+#!/bin/bash
+
+~/.local/bin/cutadapt -m 10 -q 20 -o tp53_r2.fastq_trimmed.fastq tp53_r2.fastq.gz
+
