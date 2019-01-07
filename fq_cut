@@ -1,9 +1,6 @@
 #!/bin/bash
 cd /rhome/lyu062/bigdata/TNC_Project/fq
 
-~/.local/bin/cutadapt -a GATCTCTTGGNTCTNGCATCGATGAAGAACG -q 20 -e 0.2 ./fq/01E_T0_R1.fastq -o ./fq_trimmed/01E_T0_R1_no_adaptor.fastq
-~/.local/bin/cutadapt -a GGAAACCTTGTTACGACTTTTACTTCCTCTAAATGACCAA -q 20 -e 0.3 ./fq/01E_T0_R2.fastq -o ./fq_trimmed/01E_T0_R2_no_adaptor.fastq
-
 for read1 in *R1.fastq
 do
  ~/.local/bin/cutadapt -a GATCTCTTGGNTCTNGCATCGATGAAGAACG -q 20 -e 0.2 ./$read1 -o ../fq_trimmed/$read1
