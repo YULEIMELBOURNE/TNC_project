@@ -1,4 +1,4 @@
 #!/bin/bash
-
-~/.local/bin/cutadapt -m 10 -q 20 -o tp53_r2.fastq_trimmed.fastq tp53_r2.fastq.gz
-
+cd /rhome/lyu062/bigdata/TNC_Project
+~/.local/bin/cutadapt -a GATCTCTTGGNTCTNGCATCGATGAAGAACG -q 20 -e 0.2 ./fq/01E_T0_R1.fastq -o ./fq_trimmed/01E_T0_R1_no_adaptor.fastq
+~/.local/bin/cutadapt -a GGAAACCTTGTTACGACTTTTACTTCCTCTAAATGACCAA -q 20 -e 0.3 ./fq/01E_T0_R2.fastq -o ./fq_trimmed/01E_T0_R2_no_adaptor.fastq
