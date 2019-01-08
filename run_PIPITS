@@ -1,1 +1,32 @@
-!
+#!/bin/bash  
+
+#The PIPITS is divided into three consequential parts:
+
+#1. Sequence preparation to join, convert, quality filter etc.
+#2. Fungal ITS extraction to remove conserved regions
+#3. Process the reads to produce an OTU abundance table and the taxonomic assignment table for downstream analysis
+#Test it with a very small test dataset to ensure everything is set up correcly.
+
+
+source activate pipits_env
+
+# B1. Sequence Preparation
+echo B1. Sequence Preparation
+
+pispino_createreadpairslist -i fq_trimmed -o readpairslist.txt
+pispino_seqprep -i fq_trimmed -o out_seqprep -l readpairslist.txt
+
+# B2. Fungal ITS extraction
+echo B2. Fungal ITS extraction
+pipits_funits -i out_seqprep/prepped.fasta -o out_funits -x ITS1
+
+
+# B3. Process sequences
+echo B3. Process sequences
+
+pipits_process -i out_funits/ITS.fasta -o out_process
+
+# Once all finished, we can leave Conda environment
+source deactivate
+
+pipits_funguild.py -i out_process/otu_table.txt -o out_process/otu_table_funguild.txt
