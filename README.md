@@ -1,4 +1,4 @@
-# TNC_project :mushroom:
+# :mushroom: TNC_project :mushroom:
 ## Introduction
 In this project, we are going to build the OTU table based on the raw `"*.fasq"` sequences dataset. 
 
