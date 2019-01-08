@@ -1,6 +1,13 @@
-# TNC_project :mushroom: :evergreen_tree:
-## Introduction
-In this project, we are going to build the OTU table based on the raw `"*.fasq"` sequences dataset. 
+# :evergreen_tree: TNC_project :mushroom: 
+## Dataset Introduction
+In this project, we got the metagenomics data using Illumina MiSeq System. Based on the raw dataset, we are going to following works:
+
+- [ ] Data Processing
+- [ ] Build the complete OTU Table
+- [ ] Get a fairly good idea of what factors are driving the fungal communities vs ectomycorrhizal fungal communities.
+- [ ] Study the outcome of fungal communitites after forest burning.
+
+we are going to build the OTU table based on the raw `"*.fasq"` sequences dataset. 
 
 ## Data processing for raw dataset
 
