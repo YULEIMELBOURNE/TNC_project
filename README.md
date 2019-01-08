@@ -5,7 +5,7 @@ In this project, we are going to build the OTU table based on the raw '*.fasq' s
 ## Data processing for raw dataset
 ### [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.
-We use FastQC to do see the quality of the raw dataset. Run 'test_qc_one' to see FastQC reports in fq_report.
+We use FastQC to do see the quality of the raw dataset. Run 'test_qc_one' to see FastQC reports in the file 'fq_report'.
 
 
 ## Cutadapt to cut tails for each seuqneces
