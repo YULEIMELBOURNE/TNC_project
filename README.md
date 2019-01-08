@@ -1,6 +1,6 @@
 # TNC_project
 ## Introduction
-In this project, we are going to build the OTU table based on the raw .fasq sequences dataset. 
+In this project, we are going to build the OTU table based on the raw '*.fasq' sequences dataset. 
 ## Data processing for raw dataset
 We use FastQC to do see the quality of the raw dataset.
 ## Cutadapt to cut tails for each seuqneces
