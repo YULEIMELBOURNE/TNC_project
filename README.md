@@ -24,10 +24,8 @@ Once you had a closer look at the quality report you can realize that the data q
 Run `"code_trimme"` to do this step and we save trimmed sequences in file `"fq_trimmed"`.
 
 ## Run FastQC on trimmed data.
-In order to ccompare the different before and after Cutadapt, we run fastQC again on `"fq_trimmed"` file. Then show the comparesion in Figure 1
+In order to ccompare the different before and after Cutadapt, we run fastQC again on `"fq_trimmed"` file. Then show the comparesion in [Figure1](/result.pdf)
 
-![Comparsion](/result.pdf)
-Format: ![Alt Text](url)
 
 ## Use PIPITS to do OTU study based on trimmed sequences data.
 After trimming and cleaning the raw sequences according FastQC report. We are going to use PIPITS to make OTU table.
