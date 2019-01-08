@@ -7,6 +7,7 @@ In this project, we got the metagenomics data using Illumina MiSeq System. Based
 - [ ] Get a fairly good idea of what factors are driving the fungal communities vs ectomycorrhizal fungal communities.
 - [ ] Study the outcome of fungal communitites after forest burning.
 
+Note: All of codes are made and tested under mac and linux.
 
 # Data processing for raw dataset
 
