@@ -14,7 +14,7 @@ cd /rhome/lyu062/bigdata/TNC_Project
 # B1. Sequence Preparation
 echo B1. Sequence Preparation
 
-pispino_createreadpairslist -i fq_trimmed -o readpairslist.txt
+pispino_createreadpairslist -i fq_trimmed -o PIPITS_project/readpairslist.txt
 pispino_seqprep -i fq_trimmed -o out_seqprep -l readpairslist.txt
 
 # B2. Fungal ITS extraction
