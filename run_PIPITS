@@ -9,6 +9,7 @@
 
 
 source activate pipits_env
+cd /rhome/lyu062/bigdata/TNC_Project
 
 # B1. Sequence Preparation
 echo B1. Sequence Preparation
