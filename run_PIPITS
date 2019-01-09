@@ -15,19 +15,19 @@ cd /rhome/lyu062/bigdata/TNC_Project
 echo B1. Sequence Preparation
 
 pispino_createreadpairslist -i fq_trimmed -o PIPITS_project/readpairslist.txt
-pispino_seqprep -i fq_trimmed -o out_seqprep -l readpairslist.txt
+pispino_seqprep -i fq_trimmed -o PIPITS_project/out_seqprep -l PIPITS_project/readpairslist.txt
 
 # B2. Fungal ITS extraction
 echo B2. Fungal ITS extraction
-pipits_funits -i out_seqprep/prepped.fasta -o out_funits -x ITS1
+pipits_funits -i PIPITS_project/out_seqprep/prepped.fasta -o PIPITS_project/out_funits -x ITS1
 
 
 # B3. Process sequences
 echo B3. Process sequences
 
-pipits_process -i out_funits/ITS.fasta -o out_process
+pipits_process -i PIPITS_project/out_funits/ITS.fasta -o PIPITS_project/out_process
 
 # Once all finished, we can leave Conda environment
 source deactivate
 
-pipits_funguild.py -i out_process/otu_table.txt -o out_process/otu_table_funguild.txt
+pipits_funguild.py -i PIPITS_project/out_process/otu_table.txt -o PIPITS_project/out_process/otu_table_funguild.txt
