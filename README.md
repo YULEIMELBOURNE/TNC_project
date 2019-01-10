@@ -58,6 +58,8 @@ We run `"run_PIPITS"` to generate the OTU table.
 ./run_PIPITS
 ```
 
+There is one error when we run PIPITS on cluster but won't happen on laptop. We have already reflect this problem to the writer. 
+
 **_When we test PIPITS on [sample dataset](rawdata), it works well and gives us the finally [OTU table](otu_table_from_PIPITS_sample.txt) in reasiable time. But when we run the program on our dataset. We found the time cost is too large. We waited for about an hour but cannot get the result (Only 01W, 01S, 01N, 01E) comparing with Usearch which can finish in 30 mins for whole dataset (01-15W, 01-15S, 01-15N, 01-15E)._**
 
 
