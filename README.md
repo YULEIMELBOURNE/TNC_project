@@ -39,7 +39,7 @@ We run `"run_PIPITS"` to generate the OTU table.
 ```bash
 ./run_PIPITS
 ```
-<span style="color:red">
-When we test PIPITS on sample dataset, it works well and gives us the finally OTU table in reasiable time. But when we run the program on our dataset. We found the time cost is too large. We waited for about an hour but cannot get the result (Only 01W, 01S, 01N, 01E) comparing with Usearch which can finish in 30 mins for whole dataset (01-15W, 01-15S, 01-15N, 01-15E).</span></h1> </center>
+<font color=red size=72>
+When we test PIPITS on sample dataset, it works well and gives us the finally OTU table in reasiable time. But when we run the program on our dataset. We found the time cost is too large. We waited for about an hour but cannot get the result (Only 01W, 01S, 01N, 01E) comparing with Usearch which can finish in 30 mins for whole dataset (01-15W, 01-15S, 01-15N, 01-15E).</span></font>
 
 
