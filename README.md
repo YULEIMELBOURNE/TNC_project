@@ -2,7 +2,15 @@
 ## Questions
 1. We removed barcode?
 2. What is Demultiplexing
-3. There is one [warning](trimmed_test.out) after we cutadapt
+3. There is one [warning](trimmed_test.out) after we cutadapt.
+
+```bash
+
+WARNING:
+    The adapter is preceded by "T" extremely often.
+    The provided adapter sequence could be incomplete at its 3' end.
+    
+```
 
 ## References
 [One big biome table](https://www.biorxiv.org/content/biorxiv/suppl/2017/09/10/184960.DC1/184960-2.pdf)
