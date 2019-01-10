@@ -64,3 +64,6 @@ We run `"run_PIPITS"` to generate the OTU table.
 ### Conclusion
 Maybe PIPITS is a good program for small size dataset but it should be considered when our dataset is large.
 
+## [Usearch](http://www.drive5.com/usearch/)
+
+We are going to separate whole dataset into two group then run Usearch on each group, then try to run program [merge_otu_tables.py](http://qiime.org/scripts/merge_otu_tables.html) (a module in QIIME) to merge two OTU tables together. 
