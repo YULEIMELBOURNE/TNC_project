@@ -1,0 +1,8 @@
+# Constructed from biom file
+#OTU ID	A01B	A03B	A02B	taxonomy
+OTU4	3.0	15.0	0.0	k__Fungi; p__Ascomycota; c__Leotiomycetes; o__Rhytismatales; f__Rhytismataceae; g__Lophodermium; s__Lophodermium_seditiosum_SH175068.07FU
+OTU3	4.0	2.0	5.0	k__Fungi; p__Ascomycota; c__Eurotiomycetes; o__Chaetothyriales; f__Herpotrichiellaceae; g__Rhinocladiella; s__Rhinocladiella_similis_SH193071.07FU
+OTU1	0.0	3.0	5.0	k__Fungi; p__Ascomycota; c__Sordariomycetes; o__Glomerellales; f__Plectosphaerellaceae; g__Verticillium
+OTU6	2.0	0.0	0.0	k__Fungi; p__Ascomycota; c__Leotiomycetes; o__Helotiales; f__unidentified; g__unidentified; s__Helotiales_sp_SH196482.07FU
+OTU2	2.0	0.0	0.0	k__Fungi; p__Basidiomycota; c__Agaricomycetes; o__Hymenochaetales; f__Schizoporaceae; g__Hyphodontia; s__Hyphodontia_radula_SH221533.07FU
+OTU5	8.0	0.0	0.0	k__Fungi; p__Ascomycota; c__Leotiomycetes; o__Rhytismatales; f__Rhytismataceae; g__Lophodermium; s__Lophodermium_conigenum_SH203900.07FU
