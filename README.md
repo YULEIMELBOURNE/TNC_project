@@ -1,22 +1,20 @@
 # :evergreen_tree: TNC_project :mushroom: 
+
 ## Questions
-1. We removed barcode?
-2. What is Demultiplexing
-3. There is one warning after we cutadapt for Forward sequences ([trimmed_test.out](trimmed_test.out)).
+
+1. We removed barcodes?
+2. Demultiplex?
+3. There is one warning after we run cutadapt for forward sequences but not for reverse sequences. I used TCCGTAGGTGAACCTGCGG for forward sequences)
 
 ```bash
-
 WARNING:
     The adapter is preceded by "T" extremely often.
     The provided adapter sequence could be incomplete at its 3' end.
-    
 ```
 
 ## References
 [One big biome table](https://www.biorxiv.org/content/biorxiv/suppl/2017/09/10/184960.DC1/184960-2.pdf)
-
-[Primers](https://nature.berkeley.edu/brunslab/tour/primers.html#toc)
-
+[Primer sequences](https://nature.berkeley.edu/brunslab/tour/primers.html)
 ## Dataset Introduction
 In this project, we got the metagenomics data using Illumina MiSeq System. Based on the raw dataset, we are going to following works:
 
@@ -57,6 +55,7 @@ We run `"run_PIPITS"` to generate the OTU table.
 ```bash
 ./run_PIPITS
 ```
+
 **_When we test PIPITS on sample dataset, it works well and gives us the finally OTU table in reasiable time. But when we run the program on our dataset. We found the time cost is too large. We waited for about an hour but cannot get the result (Only 01W, 01S, 01N, 01E) comparing with Usearch which can finish in 30 mins for whole dataset (01-15W, 01-15S, 01-15N, 01-15E)._**
 
 
