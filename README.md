@@ -2,7 +2,7 @@
 ## Questions
 1. We removed barcode?
 2. What is Demultiplexing
-3. There is one warning after we cutadapt([trimmed_test.out](trimmed_test.out)).
+3. There is one warning after we cutadapt([trimmed_test.out] (trimmed_test.out)).
 
 ```bash
 
