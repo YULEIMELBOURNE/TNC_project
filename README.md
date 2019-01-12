@@ -69,3 +69,8 @@ Maybe PIPITS is a good program for small size dataset but it should be considere
 ## [Usearch](http://www.drive5.com/usearch/)
 
 We are going to separate whole dataset into two group then run Usearch on each group, then we can use the commond `otutab2biom command` to transform `.txt` into `.json` file. Next we are going to try to run program [merge_otu_tables.py](http://qiime.org/scripts/merge_otu_tables.html) (a module in QIIME) to merge two OTU tables together. 
+
+To increase way, there are three approach:
+- Cut more end
+- Change the parameter `fastq_maxdiffs` and `fastq_pctid`
+- Change the parameter `fastq_minmergelen` and `fastq_maxmergelen` 
