@@ -71,6 +71,68 @@ Maybe PIPITS is a good program for small size dataset but it should be considere
 We are going to separate whole dataset into two group then run Usearch on each group, then we can use the commond `otutab2biom command` to transform `.txt` into `.json` file. Next we are going to try to run program [merge_otu_tables.py](http://qiime.org/scripts/merge_otu_tables.html) (a module in QIIME) to merge two OTU tables together. 
 
 To increase way, there are three approach:
-- Cut more end
+- Cut more end bases
 - Change the parameter `fastq_maxdiffs` and `fastq_pctid`
 - Change the parameter `fastq_minmergelen` and `fastq_maxmergelen` 
+
+Then we set `fastq_minmergelen 180`, `fastq_maxmergelen 320`, `fastq_maxdiffs 20` and `fastq_pctid 20` and get high merge rate as following: 
+
+```bash
+usearch v11.0.667_i86linux32, 4.0Gb RAM (32.8Gb total), 32 cores
+(C) Copyright 2013-18 Robert C. Edgar, all rights reserved.
+https://drive5.com/usearch
+
+License: lyu062@ucr.edu
+
+
+Merging
+  Fwd ../fq_trimmed_test/01E_T0_R1.fastq
+  Rev ../fq_trimmed_test/01E_T0_R2.fastq
+  Relabel reads as 01E.#
+
+00:00 72Mb   FASTQ base 33 for file ../fq_trimmed_test/01E_T0_R1.fastq
+00:00 72Mb   CPU has 32 cores, defaulting to 10 threads
+00:48 101Mb   100.0% 97.8% merged 
+                                 
+Merging
+  Fwd ../fq_trimmed_test/01N_T0_R1.fastq
+  Rev ../fq_trimmed_test/01N_T0_R2.fastq
+  Relabel reads as 01N.#
+
+01:31 101Mb   100.0% 97.7% merged
+                                 
+Merging
+  Fwd ../fq_trimmed_test/01S_T0_R1.fastq
+  Rev ../fq_trimmed_test/01S_T0_R2.fastq
+  Relabel reads as 01S.#
+
+01:58 101Mb   100.0% 96.6% merged
+                                 
+Merging
+  Fwd ../fq_trimmed_test/01W_T0_R1.fastq
+  Rev ../fq_trimmed_test/01W_T0_R2.fastq
+  Relabel reads as 01W.#
+
+03:02 101Mb   100.0% 97.0% merged
+
+Totals:
+   1001786  Pairs (1.0M)
+    971860  Merged (971.9k, 97.01%)
+    549979  Alignments with zero diffs (54.90%)
+      4927  Too many diffs (> 20) (0.49%)
+         1  Fwd tails Q <= 2 trimmed (0.00%)
+         2  Rev tails Q <= 2 trimmed (0.00%)
+       891  Fwd too short (< 64) after tail trimming (0.09%)
+       719  Rev too short (< 64) after tail trimming (0.07%)
+      6932  No alignment found (0.69%)
+         0  Alignment too short (< 16) (0.00%)
+      3071  Merged too short (< 180)
+     13386  Merged too long (> 320)
+        85  Staggered pairs (0.01%) merged & trimmed
+    194.64  Mean alignment length
+    260.04  Mean merged length
+      0.73  Mean fwd expected errors
+      0.65  Mean rev expected errors
+      0.13  Mean merged expected errors
+
+```
