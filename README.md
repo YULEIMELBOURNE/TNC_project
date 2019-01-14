@@ -134,6 +134,43 @@ Totals:
       0.71  Mean fwd expected errors
       0.63  Mean rev expected errors
       0.11  Mean merged expected errors
+```
+The output for `.\filter`
 
+```bash
+00:00 38Mb   CPU has 32 cores, defaulting to 10 threads
+04:07 33Mb    100.0% Filtering, 97.4% passed
+    966903  Reads (966.9k)                  
+     25090  Discarded reads with expected errs > 1.00
+    941813  Filtered reads (941.8k, 97.4%)
+```
 
+The output for `./uniques`
+```bash
+00:07 317Mb   100.0% Reading ./out/filtered.fa
+00:07 283Mb  CPU has 32 cores, defaulting to 10 threads
+00:13 502Mb   100.0% DF
+00:13 513Mb  941813 seqs, 192986 uniques, 154096 singletons (79.8%)
+00:13 513Mb  Min size 1, median 1, max 47075, avg 4.88
+00:18 352Mb   100.0% Writing ./out/uniques.fa
+```
+
+The output for `./otus`
+```bash
+00:28 52Mb    100.0% 606 OTUs, 190 chimeras
+```
+
+The output for `./otutable `
+
+```bash
+00:00 41Mb    100.0% Reading ./out/otus.fa
+00:00 7.2Mb   100.0% Masking (fastnucleo) 
+00:00 8.0Mb   100.0% Word stats          
+00:00 8.0Mb   100.0% Alloc rows
+00:00 8.6Mb   100.0% Build index
+00:00 42Mb   CPU has 32 cores, defaulting to 10 threads
+04:38 81Mb    100.0% Searching merged.fq, 99.1% matched
+957618 / 966903 mapped to OTUs (99.0%)                 
+04:38 81Mb   Writing ./out/otutable.txt
+04:38 81Mb   Writing ./out/otutable.txt ...done.
 ```
