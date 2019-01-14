@@ -92,47 +92,48 @@ Merging
 
 00:00 72Mb   FASTQ base 33 for file ../fq_trimmed_test/01E_T0_R1.fastq
 00:00 72Mb   CPU has 32 cores, defaulting to 10 threads
-00:48 101Mb   100.0% 97.8% merged 
+00:57 101Mb   100.0% 97.3% merged
                                  
 Merging
   Fwd ../fq_trimmed_test/01N_T0_R1.fastq
   Rev ../fq_trimmed_test/01N_T0_R2.fastq
   Relabel reads as 01N.#
 
-01:31 101Mb   100.0% 97.7% merged
+01:48 101Mb   100.0% 97.1% merged
                                  
 Merging
   Fwd ../fq_trimmed_test/01S_T0_R1.fastq
   Rev ../fq_trimmed_test/01S_T0_R2.fastq
   Relabel reads as 01S.#
 
-01:58 101Mb   100.0% 96.6% merged
+02:12 101Mb   100.0% 96.1% merged
                                  
 Merging
   Fwd ../fq_trimmed_test/01W_T0_R1.fastq
   Rev ../fq_trimmed_test/01W_T0_R2.fastq
   Relabel reads as 01W.#
 
-03:02 101Mb   100.0% 97.0% merged
+03:17 101Mb   100.0% 96.5% merged
 
 Totals:
    1001786  Pairs (1.0M)
-    971860  Merged (971.9k, 97.01%)
+    966903  Merged (966.9k, 96.52%)
     549979  Alignments with zero diffs (54.90%)
-      4927  Too many diffs (> 20) (0.49%)
+      9975  Too many diffs (> 15) (1.00%)
          1  Fwd tails Q <= 2 trimmed (0.00%)
          2  Rev tails Q <= 2 trimmed (0.00%)
        891  Fwd too short (< 64) after tail trimming (0.09%)
        719  Rev too short (< 64) after tail trimming (0.07%)
       6932  No alignment found (0.69%)
          0  Alignment too short (< 16) (0.00%)
-      3071  Merged too short (< 180)
-     13386  Merged too long (> 320)
+      3065  Merged too short (< 180)
+     13301  Merged too long (> 320)
         85  Staggered pairs (0.01%) merged & trimmed
-    194.64  Mean alignment length
-    260.04  Mean merged length
-      0.73  Mean fwd expected errors
-      0.65  Mean rev expected errors
-      0.13  Mean merged expected errors
+    194.76  Mean alignment length
+    260.01  Mean merged length
+      0.71  Mean fwd expected errors
+      0.63  Mean rev expected errors
+      0.11  Mean merged expected errors
+
 
 ```
