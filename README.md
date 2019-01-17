@@ -37,6 +37,20 @@ Run `"code_trimme"` to do this step and we save trimmed sequences in file `"fq_t
 ./code_trimme
 ```
 
+In our processing, we set the parameter as following:
+
+```bash
+-Forward Primmer: 
+GATCTCTTGGNTCTNGCATCGATGAAGAACG
+-Forward cut end length: 25
+-Forward q = 20; e = 0.2
+
+-Reverse Primmer: GGAAACCTTGTTACGACTTTTACTTCCTCTAAATGACCAA
+-Reverse cut end length: 30
+-Reverse q = 20; e = 0.2
+```
+
+
 ## Run FastQC on trimmed data.
 In order to ccompare the different before and after Cutadapt, we run fastQC again on `"fq_trimmed"` file. Then show the comparesion in [Figure1](/result.pdf). From the changes in sequences' length and number, we see cutadapt help us remove primers and sequences with low quality.
 
@@ -164,20 +178,9 @@ The output for `./otutable `
 04:38 81Mb   Writing ./out/otutable.txt
 04:38 81Mb   Writing ./out/otutable.txt ...done.
 ```
-* Parameter information for our pipeline:
+Parameter information for Usearch:
 ```bash
-
-*Trimme Sequences:*
--Forward Primmer: 
-GATCTCTTGGNTCTNGCATCGATGAAGAACG
--Forward cut end length: 25
--Forward q = 20; e = 0.2
-
--Reverse Primmer: GGAAACCTTGTTACGACTTTTACTTCCTCTAAATGACCAA
--Reverse cut end length: 30
--Reverse q = 20; e = 0.2
-
-*Usearch*
+Usearch
 -Merge: 
 fastq_maxdiffs: 15; -fastq_pctid: 15;
 fastq_minmergelen 200; -fastq_maxmergelen 350
