@@ -174,3 +174,35 @@ The output for `./otutable `
 04:38 81Mb   Writing ./out/otutable.txt
 04:38 81Mb   Writing ./out/otutable.txt ...done.
 ```
+* Parameter information for our pipeline:
+```bash
+
+*Trimme Sequences:*
+-Forward Primmer: 
+GATCTCTTGGNTCTNGCATCGATGAAGAACG
+-Forward cut end length: 25
+-Forward q = 20; e = 0.2
+
+-Reverse Primmer: GGAAACCTTGTTACGACTTTTACTTCCTCTAAATGACCAA
+-Reverse cut end length: 30
+-Reverse q = 20; e = 0.2
+
+*Usearch*
+-Merge: 
+fastq_maxdiffs: 15; -fastq_pctid: 15;
+fastq_minmergelen 200; -fastq_maxmergelen 350
+
+-filter:
+fastq_maxee 0.5
+
+-otus:
+minsize 2
+
+-otutable:
+id 0.97
+
+-prediction:
+database: unitITS.udb
+cutoff: 0.8 
+
+```
