@@ -1,16 +1,5 @@
 # :evergreen_tree: TNC_project :mushroom: 
 
-## Questions
-
-1. We removed barcodes?
-2. Demultiplex?
-3. There is one warning after we run cutadapt for forward sequences but not for reverse sequences. I used TCCGTAGGTGAACCTGCGG for forward sequences)
-
-```bash
-WARNING:
-    The adapter is preceded by "T" extremely often.
-    The provided adapter sequence could be incomplete at its 3' end.
-```
 
 ## References
 [One big biome table](https://www.biorxiv.org/content/biorxiv/suppl/2017/09/10/184960.DC1/184960-2.pdf)
@@ -20,9 +9,10 @@ WARNING:
 ## Dataset Introduction
 In this project, we got the metagenomics data using Illumina MiSeq System. Based on the raw dataset, we are going to following works:
 
-- [ ] Data Processing
-- [ ] Build the complete OTU Table
-- [ ] Get a fairly good idea of what factors are driving the fungal communities vs ectomycorrhizal fungal communities.
+
+- [x] Data Processing
+- [x] Build the complete OTU Table
+- [x] Get a fairly good idea of what factors are driving the fungal communities vs ectomycorrhizal fungal communities.
 - [ ] Study the outcome of fungal communitites after forest burning.
 
 Note: All of codes are made and tested under mac and linux.
