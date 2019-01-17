@@ -14,6 +14,7 @@ In this project, we got the metagenomics data using Illumina MiSeq System. Based
 - [x] Build the complete OTU Table
 - [x] Get a fairly good idea of what factors are driving the fungal communities vs ectomycorrhizal fungal communities.
 - [ ] Study the outcome of fungal communitites after forest burning.
+- [ ] Do Statistcal Test.
 
 Note: All of codes are made and tested under mac and linux.
 
@@ -206,3 +207,6 @@ database: unitITS.udb
 cutoff: 0.8 
 
 ```
+
+## Statistcal Test
+
