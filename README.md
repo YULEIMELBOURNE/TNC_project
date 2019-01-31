@@ -207,6 +207,7 @@ database: unitITS.udb
 cutoff: 0.8 
 
 ```
+## For the output otu table, we use Usearch to do normalize.
 
 ## Statistcal Test
 Based on the OTU table got from bioinformatical pipeline, we are going to do the statistical analysis in the following step.
