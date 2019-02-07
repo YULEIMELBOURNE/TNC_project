@@ -213,6 +213,6 @@ cutoff: 0.8
 Based on the OTU table got from bioinformatical pipeline, we are going to do the statistical analysis in the following step.
 
 # Abundance curve 
-
+As we have get the OTU table already, we are going to make the abundance curve for each sample. We use R language to do next works.
 
 
